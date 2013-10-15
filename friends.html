@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="screen, projection" />
+	<link href="css/tablet.css" rel="stylesheet" type="text/css" media="all and (min-width: 481px) and (max-width: 1030px)" />
+	<link href="css/mobile.css" rel="stylesheet" type="text/css" media="all and (min-width: 0px) and (max-width: 480px)" />
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=1.4.2"></script>
+	<script src="js/java.js"></script>
+	<script>
+	$('document').ready(function(){
+		$('#back_button').click(function(){
+			$('#loginBox2').hide();
+		
+		});
+	});
+	
+	</script>
+
+</head>
+
+<body>
+	<div class="macro"> <!-- Wrapper -->
+	
+	<header class="crown"> <!-- Header -->
+	
+		<div id="identity"><img src="images/logo.png"/></div>
+		<nav id="h_nav">
+			<dl id="paths">
+			<dt><a class="crown_links" href="my_city.html"><span id="mini">my</span>City</a></dt>
+			<dt><a class="crown_links" href="my_travels.html"><span id="mini">my</span>Travels</a></dt>
+			<dt><a class="crown_links" href="the_world.html"><span id="mini">the</span>World</a></dt>
+			<dt><a class="crown_links" href="my_city.html">Discover</a></dt>
+			</dl>
+		</nav>
+		<div id="help"><img src="images/y.png" /></div>
+		<div id="notifications"><img src="images/x.png" /></div>
+		<div id="nav_right">
+			<div class="sb-search" id="sb-search" ><!-- Search Bar -->
+			<form>
+				<input  class="sb-search-input" id="search" value="" type="search" placeholder="Search" name="search" />
+				<input class="sb-search-submit" type="submit" value="" />
+				<span class="sb-icon-search"><img style="position: relative; top: -53px;" src="images/search_icon.png"></span>
+			</form>
+			</div>
+		</div>
+		
+	</header> <!-- End Header -->
+	
+	<div class="macrosub1"> <!-- Grid -->
+	
+		<div class="sub_a">
+			<div id="left">
+				<section id="profile">
+					<div id="profile_image"><a href=""><img src="images/profile.png"></a></div>
+					<span id="name"><p>Konstantinos</p><p>Tsilkos</p></span>
+				</section>
+				<nav id="v_nav">
+					<dl id="panels">
+					<a href="index.html"><dt id="panel_1">
+						<div id="news">
+							<div id="icon"></div>
+							<span id="icon_title">news</span>
+						</div>
+					</dt></a>
+					<a href="photos.html"><dt id="panel_2">
+						<div id="photos">
+							<div id="icon"></div>
+							<span id="icon_title">photos</span>
+						</div>
+					</dt></a>
+					<a href="friends.html"><dt id="panel_3">
+						<div id="friends" style="background:url('css/friends_glow2.png') no-repeat; background-position: 5px 8px;">
+							<div id="icon"></div>
+							<span id="icon_title">friends</span>
+						</div>
+					</dt></a>
+					<a href="coolplaces.html"><dt id="panel_4" style="width: 65px; top: -1px; position: relative;">
+						<div id="coolplaces" style="text-align: center;">
+							<div id="icon"></div>
+							<span id="icon_title2">coolplaces</span>
+						</div>
+					</dt></a>
+					<a href="hangouts.html"><dt id="panel_5" style="width: 65px; top: -1px; position: relative;">
+						<div id="hangouts" style="text-align: center;">
+							<div id="icon"></div>
+							<span id="icon_title2">hangouts</span>
+						</div>
+					</dt></a>
+					<a href="wishes.html"><dt id="panel_6">
+						<div id="wishes">
+							<div id="icon"></div>
+							<span id="icon_title">wishes</span>
+						</div>
+					</dt></a>
+					<a href="events.html"><dt id="panel_7">
+						<div id="events">
+							<div id="icon"></div>
+							<span id="icon_title">events</span>
+						</div>
+					</dt></a>
+					<a href="reputation.html"><dt id="panel_8">
+						<div id="reputation">
+							<div id="icon"></div>
+							<span id="icon_title">reputation</span>
+						</div>
+					</dt></a>
+					</dl>
+				</nav>
+			</div>			
+		</div>
+		<div class="sub_b">
+			<div id="middle">	<!-- Main Content Column -->
+			
+				<section id="breadcrumbs">
+					<div id="bread_indicator" style="background-color:rgb(68,158,205);"></div>
+					<h1 class="page_title">Friends</h1>
+					<article id="page_notifications"></article>
+				</section>
+				
+				<section id="heart">
+					<section id="menu">		<!-- Horizontal Menu -->
+						<div id="mini_nav6_friends">
+							<a href="#" id="loginButton6"><span>find friends</span></a>
+							<div style="clear:both"></div>
+							<div id="loginBox6">                
+							</div>
+						</div>
+						<div id="mini_nav7_friends">
+							<div id="show_friends" style="position:relative; top:7px;"><span>show:</span></div>
+							<ul class="tabs" id="tabs_friends">
+							<li>
+							  <input type="radio" checked name="tabs" id="tab5">
+							  <label id="my_friends" for="tab5"><span>friends<span></label>
+							  <div id="tab-content5" class="tab-content">
+								<div class="animated  bounceInDown">
+									<!--<article class="block_friends">
+										<img style="position: absolute; margin: 0 0 0 720px;" src="images/message_off.png">
+										<header class="block_title">
+											<div style="margin-top: 15px; float: left;"><img src="images/friends_pic.png"></div>
+											<p class="block_title_friends_update">Benjamin Smith</p><span id="level_indicator">Level 23</span>
+											<div class="rank"><img src="images/trophy_v1.png"></div><div class="rank" style="margin-left:65px;"><img src="images/trophy_v2.png"></div>
+											<p class="block_subtitle_friends_update">New York</p>
+										</header>
+										<div id="block_content">
+											<div id="block_content_friendsupdate">
+												<span class="filler"></span>
+												<p class="block_text_friends" style="padding-left: 12px;">Photos: 238</p>
+												<p class="block_text_friends">Citiplaces: 21</p>
+												<p class="block_text_friends">Hangouts: 4</p>
+												<p></p>
+												<p class="block_text_friends">Friends: 185</p>
+												<p class="block_text_friends">Wishes: 123</p>
+												<p class="block_text_friends">Events: 3</p>
+											</div>
+											<article class="bf_update">
+												<img style="margin: 4px 0 0 15px; float: left;" src="images/photos_update.png">
+												<p class="bn_v2_update_text">uploaded 6 new photos,
+												<time datetime="MM-DDThh:mm">Jan 21, 12:33pm</time></p>
+											</article>
+											<article class="bf_update">
+												<img style="margin: 4px 0 0 15px; float: left;" src="images/friends_update.png">
+												<p class="bn_v2_update_text">is now friends with Robert Szzmith,
+												<time datetime="MM-DDThh:mm">Jan 21, 12:33pm</time></p>
+											</article>
+											<article class="bf_update">
+												<img style="margin: 4px 0 0 15px; float: left;" src="images/reputation_update.png">
+												<p class="bn_v2_update_text">reached Level 23!
+												<time datetime="MM-DDThh:mm">Jan 21, 12:33pm</time></p>
+											</article>
+										</div>
+									</article>-->
+								</div>
+							  </div>
+							</li>
+							<li>
+							  <input type="radio" name="tabs" id="tab6">
+							  <label id="i_watch" for="tab6"><span>people I watch<span></label>
+							  <div id="tab-content6" class="tab-content">
+								<div class="animated  bounceInDown">
+								
+								</div>
+							  </div>
+							</li>
+							<li>
+							  <input type="radio" name="tabs" id="tab7">
+							  <label id="they_watch" for="tab7"><span>watchers<span></label>
+							  <div id="tab-content7" class="tab-content">
+								<div class="animated  bounceInDown">
+
+								</div>
+							  </div>
+							</li>
+							</ul>
+						</div>
+						<div id="mini_nav4" style="margin: 0 0 0 25px;">
+						<a href="#" id="loginButton4"><span>sort by</span></a>
+							<div style="clear:both; display:inline-block;"></div>
+							<div id="show_as"><span>show as:</span>
+							<a href="#"><img style="position:relative; top:2px;" src="images/grid_block.png"></a>
+							<a href="#"><img style="position:relative; top:2px;" src="images/grid_circle.png"></a></div>
+							<div id="loginBox4">                
+								<div id="loginForm4">
+									<span>Date</span>
+									<span>Popularity</span>
+								</div>
+							</div>
+						</div>
+					</section>		<!-- END Horizontal Menu -->
+					
+					<section id="content" style="position:relative; top:-8px;">
+						<div id="list_view" class="alist">
+						<article class="block_friends">
+										<img style="position: absolute; margin: 0 0 0 720px;" src="images/message_off.png">
+										<header class="block_title">
+											<div style="margin-top: 15px; float: left;"><img src="images/friends_pic.png"></div>
+											<p class="block_title_friends_update">Benjamin Smith</p><span id="level_indicator">Level 23</span>
+											<div class="rank"><img src="images/trophy_v1.png"></div><div class="rank" style="margin-left:65px;"><img src="images/trophy_v2.png"></div>
+											<p class="block_subtitle_friends_update">New York</p>
+										</header>
+										<div id="block_content">
+											<div id="block_content_friendsupdate">
+												<span class="filler"></span>
+												<p class="block_text_friends" style="padding-left: 12px;">Photos: 238</p>
+												<p class="block_text_friends">Citiplaces: 21</p>
+												<p class="block_text_friends">Hangouts: 4</p>
+												<p></p>
+												<p class="block_text_friends">Friends: 185</p>
+												<p class="block_text_friends">Wishes: 123</p>
+												<p class="block_text_friends">Events: 3</p>
+											</div>
+											<article class="bf_update">
+												<img style="margin: 4px 0 0 15px; float: left;" src="images/photos_update.png">
+												<p class="bn_v2_update_text">uploaded 6 new photos,
+												<time datetime="MM-DDThh:mm">Jan 21, 12:33pm</time></p>
+											</article>
+											<article class="bf_update">
+												<img style="margin: 4px 0 0 15px; float: left;" src="images/friends_update.png">
+												<p class="bn_v2_update_text">is now friends with Robert Szzmith,
+												<time datetime="MM-DDThh:mm">Jan 21, 12:33pm</time></p>
+											</article>
+											<article class="bf_update">
+												<img style="margin: 4px 0 0 15px; float: left;" src="images/reputation_update.png">
+												<p class="bn_v2_update_text">reached Level 23!
+												<time datetime="MM-DDThh:mm">Jan 21, 12:33pm</time></p>
+											</article>
+										</div>
+									</article>
+						</div>
+
+						<!--<div id="map_view" class="alist">
+							content goes here
+						</div>-->
+					
+					</section>
+				</section>
+			</div>
+		</div>	
+		<div class="sub_c">
+			<div id="right">
+			</div>		
+		</div>
+		
+	</div> <!-- End Grid -->
+	
+	</div> <!-- End Wrapper -->
+	<script src="js/classie.js"></script>
+	<script src="js/uisearch.js"></script>
+	<script>
+		new UISearch( document.getElementById( 'sb-search' ) );
+	</script>
+</body>
+
+</html>
